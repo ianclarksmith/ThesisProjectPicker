@@ -177,6 +177,16 @@ function constructSentence() {
          + " for " + articleForNoun(client) + " " + program + ".";
 };
 
+var shareButton = document.querySelector("#share");
+shareButton.onclick = function () {
+    var text = document.querySelector("#idea").innerHTML;
+    var url = "https://twitter.com/home?status="
+            + encodeURI(text)
+    ;
+    window.open(url);
+    return false;
+};
+
 (function reset() {
     var element = document.querySelector("#idea");
     var idea = constructSentence();

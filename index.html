@@ -3,8 +3,11 @@
   <head>
     <title>Thesis Project Picker</title>
     <style>
-      body {color: #3d59ab; background: white}
-      #container {font-family: Helvetica; text-align: center; margin-top: 30%;}
+      #container {
+        font-family: Helvetica;
+        text-align: center;
+        margin-top: 30%;
+      }
       #refresh {
         text-decoration: none;
         padding: .6em;
@@ -16,12 +19,24 @@
         color: white;
         background: #e34234;
       }
+      #share {
+        text-decoration: none;
+        padding: .6em;
+        color: #3d59ab;
+        border: 1px solid #3d59ab;
+        border-radius: .25em;
+      }
+      #share:hover {
+        color: white;
+        background: #3d59ab;
+      }
     </style>
   </head>
   <body>
     <div id="container">
       <h1 id="idea"></h1>
       <a href="" id="refresh">No good.</a>
+      <a href="#" id="share">Tweet</a>
     </div>
     <script src="generator.js" charset="utf-8" type="text/javascript"></script>
   </body>
